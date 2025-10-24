@@ -216,3 +216,264 @@ background-color: black;
     opacity: 0.9;
     transform: translateY(0);
 }
+
+/* --- Footer Specific Styles --- */
+.avrdus-footer {
+    /* background-color: #1a1a1a; Dark background color */
+    color: #cccccc; /* Light text color */
+    padding: 60px 0 0;
+    position: relative;
+    background-color: #1a1a1a; 
+    /* Base dark color */
+    
+    /* Creating the repeating dark diagonal pattern */
+    background-image: repeating-linear-gradient(
+        -45deg, Angle of the stripes
+        #222222, Dark stripe color 1 (Slightly lighter than base)
+        #222222 1px, Stripe width
+        #1a1a1a 1px, Base color (background between stripes)
+        #1a1a1a 10px Pattern repeat distance
+    );
+}
+
+.footer-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 40px; /* Padding for the main content area */
+    justify-content: space-between;
+    gap: 40px; /* Space between columns */
+}
+
+.footer-column {
+    flex: 1; /* Equal width for the first two columns */
+    min-width: 250px;
+}
+
+.reach-us-col {
+    flex: 1.5; /* The form column looks slightly wider */
+    min-width: 350px;
+}
+
+/* --- Headings --- */
+.avrdus-footer h2 {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+/* Subtle line under the h2 headings */
+.avrdus-footer h2::after {
+    content: '';
+    display: block;
+    width: 60px; /* Shorter than the text */
+    height: 2px;
+    background-color: #444444; /* Dark gray line color */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* --- Logo and Contact Info --- */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.logo-placeholder {
+    font-size: 2.5em;
+    color: #e6e6e6; /* Light gray for the icon */
+    margin-right: 10px;
+    /* Styling to represent the dotted ring/design in the image */
+    border: 3px solid #e6e6e6;
+    border-radius: 50%;
+    padding: 5px 8px;
+    line-height: 1;
+}
+
+.logo h1 {
+    font-size: 1.2em;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.info-item i {
+    color: #ff9900; /* Orange/Gold color for icons */
+    margin-right: 15px;
+    font-size: 1.1em;
+    margin-top: 2px; /* Slight alignment adjustment */
+}
+
+.info-item p {
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+.open-hours {
+    margin-top: 30px;
+}
+
+.hours-title {
+    color: #ff9900; /* Orange/Gold for "Open Hours" */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* --- Quick Links --- */
+.links-group {
+    display: flex;
+    gap: 40px;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+}
+
+.link-list li {
+    margin-bottom: 10px;
+    font-size: 0.95em;
+}
+
+.link-list li a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-left: 5px; /* Space between icon and text */
+}
+
+.link-list li a:hover {
+    color: #ff9900;
+}
+
+.link-list i {
+    color: #ff9900;
+    font-size: 0.7em;
+}
+
+/* --- Reach Us (Form) --- */
+.email-address {
+    color: #ff9900;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+    background-color: #ffffff;
+    border: none;
+    padding: 12px 15px;
+    font-size: 1em;
+    color: #333333;
+    border-radius: 3px;
+    flex: 1;
+    font-family: inherit;
+    /* Subtle box shadow for depth */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #888888;
+}
+
+.get-a-quote-btn {
+    background-color: #ff9900; /* Orange/Gold button color */
+    color: #1a1a1a; /* Dark text for contrast */
+    padding: 12px 25px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: fit-content; /* Only take up necessary width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.get-a-quote-btn:hover {
+    background-color: #e08500; /* Slightly darker orange on hover */
+}
+
+.get-a-quote-btn i {
+    margin-right: 8px;
+    color: #1a1a1a;
+}
+
+
+/* --- Footer Bottom Bar --- */
+.footer-bottom {
+    border-top: 1px solid #333333; /* Separator line */
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 0.85em;
+    background-color: #111111; /* Slightly darker shade for the bottom bar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* For scroll-to-top button */
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom strong {
+    font-weight: bold;
+}
+
+.scroll-to-top {
+    position: absolute;
+    right: 20px;
+    bottom: -20px; /* Position relative to its parent (footer-bottom), but visually outside */
+    background-color: #ff9900;
+    color: #1a1a1a;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    /* Adjusting to match the position in the image which is anchored to the bottom right of the main footer area */
+    bottom: 10px;
+    right: 40px;
+}
+
+.scroll-to-top:hover {
+    transform: translateY(-3px);
+}
