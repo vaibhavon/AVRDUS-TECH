@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -25,12 +25,12 @@
     align-items: center;
 }
 
-.logo {
+.c-logo {
     width: 20%;
     height: 50%;
 }
 
-.logo img {
+.c-logo img {
     height: 100%;
     width: 100%;
 }
@@ -38,7 +38,7 @@
 .menubar {
     width: 70%;
     height: 100%;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 800;
     display: flex;
     align-items: center;
@@ -103,11 +103,15 @@
 .Dropdown ul {
     width: auto;
     height: auto;
-    padding: 20px;
+    padding: 10px;
+    font-size: 13px;
     background-color: white;
+    font-family: sans-serif;
+    font-weight: 600;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     position: absolute;
     z-index: 2;
     top: 65px;
@@ -115,7 +119,7 @@
 }
 
 .Dropdown ul li {
-    padding: 10px 20px 10px 20px;
+    padding: 5px 20px 5px 10px;
 }
 
 .dropdown-text {
@@ -171,15 +175,16 @@
     height: 180px;
     background-color: black;
     color: white;
-    padding: 40px 10px 10px 100px;
+    padding: 40px 10px 10px 40px;
 }
 
 .headling {
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 20px;
+    text-transform: uppercase;
     font-weight: 800;
-    background: linear-gradient(90deg, #D64520 0%, #F36C21 50%, #F4B223 100%);
-    -webkit-background-clip: text;
+    background: repeating-linear-gradient(0deg, #D64520 0%, #F36C21 30%, #F4B223 80%);
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -196,7 +201,7 @@ a:hover {
 /* section -1  */
 #sec-1 {
     width: 100%;
-    height: 70vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -205,11 +210,11 @@ a:hover {
 .text-headline {
     font-size: 28px;
     font-weight: 800;
-    text-align: left;
-    padding: 30px;
+    text-align: left; 
+    padding: 40px;
 }
 .headline-section{
-    background: linear-gradient(90deg, #D64520 0%, #F36C21 50%, #F4B223 100%);
+    background: linear-gradient(90deg,  #D64520 0%, #F36C21 50%, #F4B223 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -218,12 +223,13 @@ a:hover {
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    padding: 20px 40px 40px 0px;
+    /* align-items: center; */
+    justify-content: center;
 }
 
 #sec1-text article {
-    width: 60%;
+    width: 55%;
     font-size: 15px;
     font-family: 'Montserrat', 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -231,12 +237,28 @@ a:hover {
     /* letter-spacing: 2px; */
 }
 
+.bpoint{
+    padding-left: 20px;
+    line-height: 30px;
+}
+
 aside img {
     width: 80%;
     height: 300px;
     float: right;
 }
+.my-box {
+    box-shadow: 2px 6px 8px rgb(34, 4, 4);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
 /* --- Footer Specific Styles --- */
+
+
+
 .avrdus-footer {
     /* background-color: #1a1a1a; Dark background color */
     color: #cccccc; /* Light text color */
@@ -247,14 +269,13 @@ aside img {
     
     /* Creating the repeating dark diagonal pattern */
     background-image: repeating-linear-gradient(
-        -45deg, Angle of the stripes
-        #222222, Dark stripe color 1 (Slightly lighter than base)
-        #222222 1px, Stripe width
-        #1a1a1a 1px, Base color (background between stripes)
-        #1a1a1a 10px Pattern repeat distance
+        -45deg,
+        #222222 0px,
+        #222222 1px,
+        #1a1a1a 1px,
+        #1a1a1a 10px
     );
 }
-
 .footer-content {
     display: flex;
     max-width: 1200px;
@@ -374,8 +395,8 @@ aside img {
 
 .link-list li a:hover {
     color: #ff9900;
+    transform: translateX(4px);/
 }
-
 .link-list i {
     color: #ff9900;
     font-size: 0.7em;
@@ -495,4 +516,8 @@ aside img {
 
 .scroll-to-top:hover {
     transform: translateY(-3px);
+}
+
+.bottom-text{
+    color: #c37500;
 }
