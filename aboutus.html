@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./aboutus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+<section class="box">
+ 
+        <div class="box1">
+            <h2>About Us</h2>
+        </div>
+        
+        <div class="box2 hidden">
+            <img src="./about1.png" alt="wait">
+            <p>We are an experienced service provider, offering point cloud solutions or laser scanning survey solutions
+                to the various industries. <br>We serve a wide variety of clients and have worked with building
+                contractors, architects, surveyors and engineers. <br> Our workflow is designed to ensure that our customers receive
+                the highest quality 3D information in a timely and cost-effective manner. <br> We work closely with our
+                customers to understand their specific requirements and leverage our expertise to provide optimum solutions. <br> We
+                work with stakeholders to ensure transparent and seamless communication of each design element to ensure projects
+                are on track. <br> To ensure better workflow and quality, we have supervisors and managers who supervises
+                the tasks with a dedicated team that defines quality,<br> ensures accuracy and creates the architectural services
+                required for each information-based model.</p>
+        </div>
+
+        <div class="box3 hidden">
+            <img src="./about2.png" alt="wait">
+            <p> We provide top most service to our clients by understanding their needs and align results with
+                their end purpose. <br>This is especially important when converting scans of existing buildings and
+                structures and providing finished information. <br> After understanding the scope and depth of detail of the project
+                will also focus on areas to be refurbished or upgraded. <br> We offer a range of Scan to 3D modeling solutions, point
+                cloud to 3D conversion, point cloud to Revit modeling, point cloud to AutoCad,<br>point cloud to 2D as-built or 3D
+                modeling, etc. Our service and products are designed to meet the following</p>
+        </div>
+        
+        <div class="data  hidden">
+            <div class="a1 hidden">
+                <p>We serve the needs of a variety of industries including architecture, engineering, construction and
+                    operations</p>
+            </div>
+            <div class="a1 hidden">
+                <p>Our team of experts strives to provide high quality Scanning and designing solutions that meet the
+                    highest industry standards.</p>
+            </div>
+            <div class="a1 hidden">
+                <p>We have many years of experience working with Indian clients and understand the unique challenges and
+                    requirements of each</p>
+            </div>
+        </div>
+        <div class="contact">
+          <div class="co1">
+            <p>We use the latest technology to ensure the accuracy and quality deliverables. Our surveyors use cloud point scanning or 3D laser scanning instead of traditional surveying techniques to improve the accuracy of the resulting 3D models. Our Scanning service includes capturing point cloud data of physical locations using laser scanners. This data is processed using specialized software to create a 3D point cloud data that accurately reflects the actual site conditions. Our team of experts are familiar with scan to design and use his best softwares to create detailed models that meet the client’s exact specifications. Detailed 3D laser scan data in the form of millions of data points.
+Point clouds are further used for planning, remodeling, repair and renovation. We specialize in providing Laser Scanning solutions to the industry. We know how important accurate and detailed 3D models are to engineering projects, that’s why we strive to use the latest technology to capture 3D information for accurate project deliverables</p>
+<button class="bu1">contact Us</button>
+</div>
+</div>
+    
+    </section>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                // If the element is visible
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    // To make the animation repeat every time you scroll up and down
+                    entry.target.classList.remove('show');
+                }
+            });
+        });
+
+        // Get all the elements with the 'hidden' class
+        const hiddenElements = document.querySelectorAll('.hidden');
+        // Tell the observer to watch each of them
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+
+</body>
+</html>

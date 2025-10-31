@@ -1,0 +1,286 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:  border-box;
+    font-family: Helvetica , sans-serif ;
+    
+}
+body{
+    background-color: rgb(245, 243, 243);
+}
+.p{
+   
+    height:auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 100px;
+
+}
+
+.p1{
+   
+    height: 300px;;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px ;
+    text-align: center;
+    color: white;
+    background-image:url(./resb1.jpg);
+  /* border-radius: 8px; */
+  background-size: 100% 100%;
+   transition:  all 2s ease-out; 
+}
+.p1 h2{
+    width: 100%;
+    font-weight: 800;
+    font-size: 30px;
+}
+.p1 p{
+    width: 100%;
+}
+
+.p2{
+    border:  solid black 1 px;
+    height: auto;;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+ 
+}
+.a{
+   
+    height: 530px;;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+     padding: 5px;
+     background-color: white;
+     border-radius: 8px;
+    
+}
+.a h3{
+width: 100%;
+   color: #000080;
+}
+.a p{
+width: 100%;
+}
+.a img{
+    height:70% ;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    
+}
+.a a{
+    width: 100%;
+}
+
+.suc{text-align: center;
+    width: 100%;
+    color: #000080;
+    font-size: 35px
+    }
+    .bu1{
+        width: 150px;  
+        height: 35px;
+        padding: 5px; 
+        border-radius: 8px;
+        background-color:#F4720E ;
+        border: none;
+        color: white;
+        font-weight: 900;
+
+    }       
+
+    .p3{
+        height: auto;
+        width: 90%;
+  
+    }
+   
+    .b{
+    height: 100%; ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+     padding: 5px;
+     margin-top: 10px;
+      
+    }
+
+     .b1{
+       
+    height: 250px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background-color: white;
+   border-radius: 8px;
+   }
+     .b2{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+    gap: 30px;
+    
+    }
+    .b1 i{
+        height: 100%;
+        width: 20%;
+        color: green;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    } 
+    .p3 h2{
+        font-weight: 700;
+        
+    width: 100%;
+    color: #000080;
+    font-size: 28px
+         
+    } 
+    .p5{
+        height: 200px;
+        width:80%;
+        background-color: rgb(221, 218, 218);
+         display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+     gap: 25px;
+     border-radius: 8px;
+   }   
+
+    .p5 h2{ 
+        font-weight: 700;
+        text-align: center;
+    width: 100%;
+    color: #000080;
+    font-size: 28px
+    }
+    .p5 p{text-align: center;
+    width: 100%;
+}
+.bu2{
+    color: white;
+    width: 100px;
+    height: 30px;
+    background-color: #000080;
+     border-radius: 5px;
+     border: none;
+}
+.p4{
+  
+    height: 400px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.p4 h3{
+color: #000080;
+font-size: 30px;
+
+}
+.dropdown {
+            /* We use inline-block so they can sit side-by-side */
+            /* but we make it 'block' so they stack vertically */
+            display: block; 
+            margin-bottom: 5px; /* Adds space between dropdowns */
+            position: relative; /* Needed for positioning the content */
+            width: 100%;
+        }
+
+        /* This is the hidden checkbox */
+        .dropdown-toggle {
+            display: none; /* Hide the actual checkbox */
+        }
+
+        /* This is the visible button (which is really a label) */
+        .dropdown-button {
+            background-color:white;
+            height: 30px;
+            width: 100%;
+            color: #000080;
+            cursor: pointer;
+            border-radius: 8px;
+            
+            
+            /* Added these lines to make it look right */
+            display: block; /* Make it fill the width */
+            line-height: 30px; /* Center the text vertically */
+            padding-left: 10px; /* Add some space for the text */
+            box-sizing: border-box; /* Ensures padding doesn't break the width */
+        }
+
+        /* This is the content box that will be shown/hidden */
+        .dropdown .content {
+            background-color:white;
+            position: relative; /* Changed from absolute to flow naturally */
+            display: none; /* Hidden by default */
+            width: 100%; /* Match the button width */
+            box-sizing: border-box; /* Match the button */
+            border-radius: 8px;
+        }
+
+        .dropdown a {
+            text-decoration: none;
+            background-color: rgb(221, 218, 218);
+            display: block;
+            padding: 10px; /* Added padding to make it look better */
+            color: black; /* Added color so text is visible */
+        }
+
+        /* --- THIS IS THE MAGIC PART --- */
+        /* When the checkbox is checked, show the .content next to it */
+        .dropdown .dropdown-toggle:checked ~ .content {
+            display: block;
+        }
+
+.hidden {
+  opacity: 0;
+  transform: translatey(5%);
+  transition:  all 2s ease-out; 
+}
+
+
+.show {
+  opacity: 1;
+  transform: translatey(0);
+}
+.a:hover{
+    transform: scale(1.1);
+}
+/* .p1:hover{
+    transform: scale(1.1);
+} */
+.b1:hover{
+   box-shadow: inset 0px -10px 5px -5px gray;
+}
+.bu1:hover{
+   box-shadow:0px 0px 2px 2px rgb(164, 98, 5);
+}
+
+
+

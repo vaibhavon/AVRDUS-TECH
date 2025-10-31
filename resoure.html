@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./resource .css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <section class="p">
+
+
+        <div class="p1">
+            <h2>Unlock the potential of 3D <br>scanning</h2>
+            <p>explore our collection of case studies, white paper,and expert insights to see how <br>
+                our solutions are transforming industries.</p>
+            <button class="bu1">Explore resource</button>
+        </div>
+        <h3 class="suc">Sucess stories of real world project</h3>
+        <div class="p2">
+
+            <div class="a hidden">
+                <img src="./car.jpg" alt="">
+                <h3>Automative Reverse <br>Eingineering</h3>
+                <p>lern how to we helped majior car <br> manufacturer digitize a classic model <br> for restoration</p>
+                <br>
+                <a href="">read more</a>
+            </div>
+            <div class="a hidden">
+                <img src="./plane.jpg" alt="">
+                <h3>Aerospace Component <br>Inspection</h3>
+                <p>see how our high-percision scanners ensursed the quality of crtical aircraft <br>parts</p><br>
+                <a href="">read more</a>
+            </div>
+            <div class="a hidden">
+                <img src="./his.jpg" alt="">
+                <h3>Historicial site preservation</h3>
+                <p>Discoer our role in creating a digital <br>archive of a world heritage site.
+                </p><br>
+                <a href="">read more</a>
+            </div>
+        </div>
+        <div class="p3">
+            <h2>In-Depth knowledge:expert white paper</h2>
+            <div class="b">
+                <div class="b1 hidden">
+                    <i class="fa-solid fa-file"></i>
+                    <div class="b2">
+                        <h3>The Ultimate Guide to 3D Scanning for Quality Control</h3>
+                        <p>An in-depth kat how 3D scanning technology is revolutionizing quality control processes
+                            across manufacturine</p>
+                        <a href="../assect/mob.3840x2160.mp4"> <button class="bu1">⬇Download PDF</button></a>
+                    </div>
+                </div>
+                <div class="b1 hidden ">
+                    <i class="fa-solid fa-file"></i>
+                    <div class=" b2">
+                        <h3>Reverse Engineering: From Physical Part to Digital Twin</h3>
+                        <p>
+                            Explore
+                            workflow for reverse engineering, from va creating a fully functional CAD model
+                        </p>
+                        <a href="../assect/mob.3840x2160.mp4"> <button class="bu1">⬇Download PDF</button></a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+     <div class="p4">
+        <h3>Frequently Ask Quection?</h3>
+
+        <div class="dropdown">
+            <input type="checkbox" id="drop1" class="dropdown-toggle">
+            
+            <label for="drop1" class="dropdown-button">What is 3D scanning?</label>
+            
+            <div class="content">
+                <a href="">3D scanning is the process of analyzing a real-world object or environment...</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <input type="checkbox" id="drop2" class="dropdown-toggle">
+            <label for="drop2" class="dropdown-button">What is 2D scanning?</label>
+            <div class="content">
+                <a href="">2D scanning (like on a flatbed scanner) captures a flat, two-dimensional image of a document or photo.</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <input type="checkbox" id="drop3" class="dropdown-toggle">
+            <label for="drop3" class="dropdown-button">What is 1D scanning?</label>
+            <div class="content">
+                <a href="">1D scanning typically refers to reading linear barcodes (like on a product at the grocery store) to get a string of text or numbers.</a>
+            </div>
+        </div>
+
+    </div>
+     <div class="p5">
+            <h2>Have Any Quection?</h2>
+            <p>Our team of experts is ready to help you with any specific inquiries you might have. <br> Reach out to us
+                for a personalized consultation.</p>
+            <a href=""><button class="bu2">contact us</button></a>
+       </div>
+
+
+        
+
+    </section>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+
+                    entry.target.classList.remove('show');
+                }
+            });
+        });
+
+
+        const hiddenElements = document.querySelectorAll('.hidden');
+
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+</body>
+
+</html>
